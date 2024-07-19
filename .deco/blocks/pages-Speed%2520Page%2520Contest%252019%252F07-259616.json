@@ -1,0 +1,9 @@
+{
+  "name": "Speed Page Contest 19/07",
+  "path": "/speed-page-contest/1907",
+  "sections": [],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

@@ -19,34 +19,6 @@
     "blockType": "sections",
     "__resolveType": "site/sections/Theme/Theme.tsx"
   },
-  "/.deco/blocks/Preview%20%2Fsections%2FFaq.tsx.json": {
-    "blockType": "sections",
-    "__resolveType": "site/sections/Faq.tsx"
-  },
-  "/.deco/blocks/Preview%20%2Fsections%2FFooter.tsx.json": {
-    "blockType": "sections",
-    "__resolveType": "site/sections/Footer.tsx"
-  },
-  "/.deco/blocks/Preview%20%2Fsections%2FHeader.tsx.json": {
-    "blockType": "sections",
-    "__resolveType": "site/sections/Header.tsx"
-  },
-  "/.deco/blocks/Preview%20%2Fsections%2FHero.tsx.json": {
-    "blockType": "sections",
-    "__resolveType": "site/sections/Hero.tsx"
-  },
-  "/.deco/blocks/Preview%20%2Fsections%2Fhero-1.tsx.json": {
-    "blockType": "sections",
-    "__resolveType": "site/sections/hero-1.tsx"
-  },
-  "/.deco/blocks/Preview%20%2Fsections%2Fhero-2.tsx.json": {
-    "blockType": "sections",
-    "__resolveType": "site/sections/hero-2.tsx"
-  },
-  "/.deco/blocks/Preview%20Sections%20MyHero.json": {
-    "blockType": "sections",
-    "__resolveType": "site/sections/myHero.tsx"
-  },
   "/.deco/blocks/Serene%20Coastline.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Theme/Theme.tsx"
@@ -59,21 +31,9 @@
     "blockType": "sections",
     "__resolveType": "site/sections/Theme/Theme.tsx"
   },
-  "/.deco/blocks/blog.json": {
-    "blockType": "apps",
-    "__resolveType": "decohub/apps/blog.ts"
-  },
-  "/.deco/blocks/decohub.json": {
-    "blockType": "apps",
-    "__resolveType": "site/apps/decohub.ts"
-  },
   "/.deco/blocks/hero.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Hero.tsx"
-  },
-  "/.deco/blocks/htmx.json": {
-    "blockType": "apps",
-    "__resolveType": "decohub/apps/htmx.ts"
   },
   "/.deco/blocks/pages-home-5afd25174424.json": {
     "name": "Home",
@@ -81,28 +41,34 @@
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
   },
-  "/.deco/blocks/site.json": {
-    "blockType": "apps",
-    "__resolveType": "site/apps/site.ts"
-  },
-  "/.deco/blocks/Preview%20%2Fsections%2FImageWithParagraph.tsx.json": {
-    "blockType": "sections",
-    "__resolveType": "site/sections/ImageWithParagraph.tsx"
-  },
-  "/.deco/blocks/Preview%20site%2Fsections%2FImageWithParagraph.tsx.json": {
-    "blockType": "sections",
-    "__resolveType": "site/sections/ImageWithParagraph.tsx"
-  },
   "/.deco/blocks/Header.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Header.tsx"
   },
-  "/.deco/blocks/Footer.json": {
-    "blockType": "sections",
-    "__resolveType": "site/sections/Footer.tsx"
-  },
   "/.deco/blocks/Vanilla.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Theme/Theme.tsx"
+  },
+  "/.deco/blocks/deco-htmx.json": {
+    "blockType": "apps",
+    "__resolveType": "site/apps/deco/htmx.ts"
+  },
+  "/.deco/blocks/deco-blog.json": {
+    "blockType": "apps",
+    "__resolveType": "site/apps/deco/blog.ts"
+  },
+  "/.deco/blocks/site.json": {
+    "blockType": "apps",
+    "__resolveType": "site/apps/site.ts"
+  },
+  "/.deco/blocks/pages-Speed%2520Page%2520Contest%252019%252F07-259616.json": {
+    "name": "Speed Page Contest 19/07",
+    "path": "/speed-page-contest/1907",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/Preview Sections MyHero.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/myHero.tsx"
   }
 }
