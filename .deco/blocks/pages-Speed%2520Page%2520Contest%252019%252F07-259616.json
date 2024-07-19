@@ -3,7 +3,10 @@
   "path": "/speed-page-contest/1907",
   "sections": [],
   "seo": {
-    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+    "__resolveType": "website/sections/Seo/SeoV2.tsx",
+    "title": "Speed Page Contest",
+    "description": "Contest made in 19/07/2024",
+    "type": "website"
   },
   "__resolveType": "website/pages/Page.tsx"
 }

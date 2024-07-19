@@ -7,27 +7,11 @@
     "blockType": "sections",
     "__resolveType": "site/sections/Faq.tsx"
   },
-  "/.deco/blocks/Groovy%20Vibes.json": {
-    "blockType": "sections",
-    "__resolveType": "site/sections/Theme/Theme.tsx"
-  },
   "/.deco/blocks/Mobile.json": {
     "blockType": "matchers",
     "__resolveType": "website/matchers/device.ts"
   },
   "/.deco/blocks/Neutral.json": {
-    "blockType": "sections",
-    "__resolveType": "site/sections/Theme/Theme.tsx"
-  },
-  "/.deco/blocks/Serene%20Coastline.json": {
-    "blockType": "sections",
-    "__resolveType": "site/sections/Theme/Theme.tsx"
-  },
-  "/.deco/blocks/Sunset%20Glow.json": {
-    "blockType": "sections",
-    "__resolveType": "site/sections/Theme/Theme.tsx"
-  },
-  "/.deco/blocks/Urban%20Chic.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Theme/Theme.tsx"
   },
@@ -44,10 +28,6 @@
   "/.deco/blocks/Header.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Header.tsx"
-  },
-  "/.deco/blocks/Vanilla.json": {
-    "blockType": "sections",
-    "__resolveType": "site/sections/Theme/Theme.tsx"
   },
   "/.deco/blocks/deco-htmx.json": {
     "blockType": "apps",
