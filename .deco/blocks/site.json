@@ -14,7 +14,11 @@
     "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11909/92ad2099-de19-4953-9fa9-63e1d25e8b27",
     "favicon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11909/02992aba-0fa8-4eaa-8687-58c55c1fd5ee"
   },
-  "global": [],
+  "global": [
+    {
+      "__resolveType": "htmx/sections/htmx.tsx"
+    }
+  ],
   "caching": {
     "directives": []
   },

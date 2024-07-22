@@ -1,0 +1,29 @@
+{
+  "__resolveType": "site/apps/deco/discord-bot.ts",
+  "github": {
+    "webhook_secret": {
+      "__resolveType": "website/loaders/secret.ts",
+      "encrypted": "66caa97d82a6cbd2cdbc8deacb7ebe0e",
+      "name": "GITHUB_WEBHOOK_SECRET"
+    },
+    "token": {
+      "__resolveType": "website/loaders/secret.ts",
+      "encrypted": "4fd8fc846da881239ac561332696a4c164a5c95a7366ed2bd182869ce63656f6a89f9240c43750dae999b54973206d21",
+      "name": "OCTOKIT_TOKEN"
+    },
+    "org_name": "vitoUwu",
+    "repo_name": "deco-bot"
+  },
+  "discord": {
+    "token": {
+      "__resolveType": "website/loaders/secret.ts",
+      "encrypted": "dbbdb9cba5645ad11f3471946fff2a4bf423ba8a7ebda62366ec2d6d29ae0f6d21f538dcca46d8a05b940448612d2933d3d3575713bc06b86e6ce46f5a0e3eea681f15c79a811d3f6f0eeb047ad5674b",
+      "name": "DISCORD_TOKEN"
+    },
+    "app_id": "1099392384757940315",
+    "channel_id": "936482083025600573",
+    "public_key": "40c2f20d0d4abea738a34de392daa4f94ab987c9c7cfc220f84ecd99f9839527",
+    "role_id": "908534100044939294"
+  },
+  "active": true
+}
