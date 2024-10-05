@@ -3,7 +3,8 @@
     "$fresh/": "https://deno.land/x/fresh@1.6.8/",
     "@core/asyncutil": "jsr:@core/asyncutil@^1.1.1",
     "@deco/actors": "jsr:@deco/actors@^0.4.1",
-    "@deco/deco": "jsr:@deco/deco@1.104.2",
+    "@deco/deco": "jsr:@deco/deco@^1.104.2",
+    "@deco/deno-ast-wasm": "jsr:@deco/deno-ast-wasm@^0.5.4",
     "@deco/dev": "jsr:@deco/dev@^1.104.0",
     "@deco/durable": "jsr:@deco/durable@0.5.3",
     "@hono/hono": "jsr:@hono/hono@^4.6.3",
@@ -31,9 +32,8 @@
     "std/": "https://deno.land/std@0.190.0/"
   },
   "tasks": {
-    "start": "deno run -A --unstable-http --env https://deco.cx/run -- deno task dev",
+    "start": "deno run -A --unstable-http --env https://deco.cx/run --build-cmd 'deno task bundle' -- deno task dev",
     "gen": "deno run -A dev.ts --gen-only",
-    "play": "USE_LOCAL_STORAGE_ONLY=true deno task start",
     "component": "deno eval 'import \"deco/scripts/component.ts\"'",
     "release": "deno eval 'import \"deco/scripts/release.ts\"'",
     "update": "deno run -Ar https://deco.cx/update",
@@ -60,17 +60,13 @@
   ],
   "lint": {
     "rules": {
-      "tags": [
-        "fresh",
-        "recommended"
-      ]
+      "tags": ["fresh", "recommended"]
     }
   },
   "nodeModulesDir": true,
   "compilerOptions": {
     "jsx": "react-jsx",
-    "jsxImportSource": "preact",
-    "experimentalDecorators": true
+    "jsxImportSource": "preact"
   },
   "lock": false
 }

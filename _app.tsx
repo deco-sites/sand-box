@@ -1,15 +1,17 @@
-import { asset, Head } from "$fresh/runtime.ts";
-import { defineApp } from "$fresh/server.ts";
-import Theme from "../sections/Theme/Theme.tsx";
-import { Context } from "@deco/deco";
-export default defineApp(async (_req, ctx) => {
-  const revision = await Context.active().release?.revision();
+import { asset, Head } from "@deco/deco/htmx";
+import { ComponentChildren } from "preact";
+
+export const Layout = (
+  { children, revision, hmrUniqueId }: {
+    children: ComponentChildren;
+    revision: string;
+    hmrUniqueId: string;
+  },
+) => {
   return (
     <>
-      {/* Include default fonts and css vars */}
-      <Theme colorScheme="any" />
-
       {/* Include Icons and manifest */}
+      {/** @ts-ignore: ignore error */}
       <Head>
         {/* Enable View Transitions API */}
         <style
@@ -17,19 +19,16 @@ export default defineApp(async (_req, ctx) => {
             __html: `@view-transition { navigation: auto; }`,
           }}
         />
-
         {/* Tailwind v3 CSS file */}
         <link
-          href={asset(`/styles.css?revision=${revision}`)}
+          href={`/styles.css?revision=${revision}${hmrUniqueId}`}
           rel="stylesheet"
         />
-
         {/* Web Manifest */}
         <link rel="manifest" href={asset("/site.webmanifest")} />
       </Head>
-
       {/* Rest of Preact tree */}
-      <ctx.Component />
+      {children}
     </>
   );
-});
+};

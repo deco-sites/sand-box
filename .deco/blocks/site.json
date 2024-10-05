@@ -29,9 +29,6 @@
       "includes": []
     }
   },
-  "flavor": {
-    "framework": "htmx"
-  },
   "theme": {
     "__resolveType": "Neutral"
   }
