@@ -1,2 +1,2 @@
-export { default } from "apps/discord-bot/mod.ts";
-export * from "apps/discord-bot/mod.ts";
+export * from "../../../carcara-bot/app/mod.ts";
+export { default } from "../../../carcara-bot/app/mod.ts";

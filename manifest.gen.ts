@@ -7,12 +7,12 @@ import * as $$$$$$$$$$$1 from "./apps/deco/discord-bot.ts";
 import * as $$$$$$$$$$$2 from "./apps/deco/htmx.ts";
 import * as $$$$$$$$$$$3 from "./apps/deco/workflows.ts";
 import * as $$$$$$$$$$$4 from "./apps/site.ts";
-import * as $$$$$$0 from "./sections/HTMX/Animations.tsx";
+import * as $$$$$$0 from "./sections/Hero.tsx";
 import * as $$$$$$1 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "sections": {
-    "site/sections/HTMX/Animations.tsx": $$$$$$0,
+    "site/sections/Hero.tsx": $$$$$$0,
     "site/sections/Theme/Theme.tsx": $$$$$$1,
   },
   "apps": {

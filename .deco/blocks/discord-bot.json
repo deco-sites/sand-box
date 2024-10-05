@@ -6,11 +6,6 @@
       "encrypted": "66caa97d82a6cbd2cdbc8deacb7ebe0e",
       "name": "GITHUB_WEBHOOK_SECRET"
     },
-    "token": {
-      "__resolveType": "website/loaders/secret.ts",
-      "encrypted": "4fd8fc846da881239ac561332696a4c164a5c95a7366ed2bd182869ce63656f6a89f9240c43750dae999b54973206d21",
-      "name": "OCTOKIT_TOKEN"
-    },
     "org_name": "vitoUwu",
     "repo_name": "deco-bot"
   },
@@ -22,8 +17,50 @@
     },
     "app_id": "1099392384757940315",
     "channel_id": "936482083025600573",
-    "public_key": "40c2f20d0d4abea738a34de392daa4f94ab987c9c7cfc220f84ecd99f9839527",
-    "role_id": "908534100044939294"
+    "public_key": "40c2f20d0d4abea738a34de392daa4f94ab987c9c7cfc220f84ecd99f9839527"
   },
-  "active": true
+  "active": true,
+  "projects": [
+    {
+      "github": {
+        "webhook_secret": {
+          "__resolveType": "website/loaders/secret.ts",
+          "encrypted": "aa13dd79d5f373b47eced114c45de039",
+          "name": "DECO_BOT_WEBHOOK_TOKEN"
+        },
+        "org_name": "vitoUwu",
+        "repo_name": "deco-bot"
+      },
+      "discord": {
+        "summary_channel_id": "1281387628775608332",
+        "pr_channel_id": "1281387628775608332"
+      },
+      "active": true,
+      "users": [
+        {
+          "discordId": "504717946124369937",
+          "githubUsername": "vitoUwu"
+        },
+        {
+          "discordId": "1099392384757940315",
+          "githubUsername": "vitoo0101"
+        },
+        {
+          "discordId": "275314245523079168",
+          "githubUsername": "trifoliate"
+        },
+        {
+          "discordId": "772284602051461175",
+          "githubUsername": "vitoo2"
+        }
+      ]
+    }
+  ],
+  "githubToken": {
+    "__resolveType": "website/loaders/secret.ts",
+    "encrypted": "4fd8fc846da881239ac561332696a4c164a5c95a7366ed2bd182869ce63656f6a89f9240c43750dae999b54973206d21",
+    "name": "OCTOKIT_TOKEN"
+  },
+  "cronJobSecret": {},
+  "messages": []
 }

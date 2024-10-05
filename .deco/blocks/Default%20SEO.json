@@ -1,0 +1,8 @@
+{
+  "__resolveType": "website/sections/Seo/Seo.tsx",
+  "title": "test",
+  "description": "test",
+  "titleTemplate": "%s",
+  "descriptionTemplate": "%s",
+  "type": "website"
+}

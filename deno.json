@@ -1,19 +1,37 @@
 {
   "imports": {
-    "site/": "./",
-    "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.79.0/",
-    "apps/": "../apps/",
     "$fresh/": "https://deno.land/x/fresh@1.6.8/",
-    "preact": "https://esm.sh/preact@10.19.6",
-    "preact/": "https://esm.sh/preact@10.19.6/",
-    "preact-render-to-string": "https://esm.sh/*preact-render-to-string@6.4.0",
+    "@core/asyncutil": "jsr:@core/asyncutil@^1.1.1",
+    "@deco/actors": "jsr:@deco/actors@^0.4.1",
+    "@deco/deco": "jsr:@deco/deco@1.104.2",
+    "@deco/dev": "jsr:@deco/dev@^1.104.0",
+    "@deco/durable": "jsr:@deco/durable@0.5.3",
+    "@hono/hono": "jsr:@hono/hono@^4.6.3",
     "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1",
-    "std/": "https://deno.land/std@0.190.0/",
-    "daisyui": "npm:daisyui@4.4.19"
+    "@std/async": "jsr:@std/async@^1.0.5",
+    "@std/crypto": "jsr:@std/crypto@^1.0.3",
+    "@std/encoding": "jsr:@std/encoding@^1.0.5",
+    "@std/flags": "jsr:@std/flags@^0.224.0",
+    "@std/fmt": "jsr:@std/fmt@^1.0.2",
+    "@std/fs": "jsr:@std/fs@^1.0.4",
+    "@std/http": "jsr:@std/http@^1.0.7",
+    "@std/io": "jsr:@std/io@^0.224.9",
+    "@std/log": "jsr:@std/log@^0.224.8",
+    "@std/media-types": "jsr:@std/media-types@^1.0.3",
+    "@std/path": "jsr:@std/path@^1.0.6",
+    "@std/semver": "jsr:@std/semver@^1.0.3",
+    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.60.2/",
+    "daisyui": "npm:daisyui@4.4.19",
+    "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.104.2/",
+    "https://esm.sh/*preact-render-to-string@6.3.1": "npm:preact-render-to-string@6.4.2",
+    "preact": "npm:preact@10.23.1",
+    "preact-render-to-string": "npm:preact-render-to-string@6.4.2",
+    "site/": "./",
+    "std/": "https://deno.land/std@0.190.0/"
   },
   "tasks": {
-    "start": "deno task bundle && deno run -A --env --config=deno.json $(deno eval 'console.log(import.meta.resolve(\"deco/hypervisor/main.ts\"))') --build-cmd 'deno task build' -- deno task dev",
+    "start": "deno run -A --unstable-http --env https://deco.cx/run -- deno task dev",
     "gen": "deno run -A dev.ts --gen-only",
     "play": "USE_LOCAL_STORAGE_ONLY=true deno task start",
     "component": "deno eval 'import \"deco/scripts/component.ts\"'",
@@ -22,11 +40,12 @@
     "check": "deno fmt && deno lint && deno check dev.ts main.ts",
     "install": "deno eval 'import \"deco/scripts/apps/install.ts\"'",
     "uninstall": "deno eval 'import \"deco/scripts/apps/uninstall.ts\"'",
-    "bundle": "deno eval 'import \"deco/scripts/apps/bundle.ts\"' site",
+    "bundle": "deno run -A jsr:@deco/deco/scripts/bundle site",
     "cache_clean": "rm deno.lock; deno cache -r main.ts",
     "build": "deno run -A dev.ts build",
     "preview": "deno run -A main.ts",
-    "dev": "deno run -A --env --unstable --unstable-hmr dev.ts"
+    "dev": "deno run -A --env --unstable --unstable-hmr dev.ts",
+    "reload": "deno cache -r https://deco.cx/run"
   },
   "githooks": {
     "pre-commit": "check"
@@ -52,5 +71,6 @@
     "jsx": "react-jsx",
     "jsxImportSource": "preact",
     "experimentalDecorators": true
-  }
+  },
+  "lock": false
 }
